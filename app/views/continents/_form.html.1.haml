@@ -1,0 +1,10 @@
+.nested-fields
+  .continents
+    .form-inline
+      = simple_form_for @continent do |c|
+        = c.input :name
+        = simple_fields_for :region do |region|
+          = render 'region_fields', :f => region
+        .actions
+          = c.button :submit
+

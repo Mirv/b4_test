@@ -1,14 +1,6 @@
 Working on edit field of continents:
 
 
-  .errors
-    = form_for @continent do |f|
-      - if @continent.errors.any?
-        #error_explanation
-          %h2= "#{pluralize(@continent.errors.count, "error")} prohibited this continent from being saved:"
-          %ul
-            - @continent.errors.full_messages.each do |msg|
-              %li= msg
 
 
 
