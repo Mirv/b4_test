@@ -1,19 +1,12 @@
-%h1 Listing continents
-
-
-%table{class: "table table-striped table-hover"}
-  %thead
-    %tr
-      %th Name
-
-
-  %tbody
-    - @continents.each do |continent|
-      %tr
-        %td= continent.name
-        %td= link_to 'Show', continent
-        %td= link_to 'Edit', edit_continent_path(continent)
-        %td= link_to 'Destroy', continent, :method => :delete, :data => { :confirm => 'Are you sure?' }
+%h1 Listing Continents
+.div
+  .div
+    - @continents.each do |f|
+      #div
+        = f.name.capitalize
+        = link_to 'Show', f
+        = link_to 'Edit', edit_continent_path(f)
+        = link_to 'Destroy', f, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 

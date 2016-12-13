@@ -1,7 +1,10 @@
-%h1 Editing continent
+%h1 Editing #{@continent.name.capitalize}
 
-= render 'form'
+.continent
+  = render 'form'
 
-= link_to 'Show', @continent
-\|
-= link_to 'Back', continents_path
+%br
+
+= link_to 'Show', @continent, :class => "btn"
+= link_to 'Back', continents_path, :class => "btn"
+ 
