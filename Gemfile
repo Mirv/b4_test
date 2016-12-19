@@ -3,10 +3,6 @@ source 'https://rubygems.org'
 gem 'rails', '5'  # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
 gem 'coffee-script'
-#gem 'sass-rails', '~> 5.0'  # Use SCSS for stylesheets
-#gem 'bootstrap-sass', '~> 3.3.6'  # bootstrap
-# gem 'bootswatch-rails', '~> 3.2.0' # more themes - redundant with cdn
-# gem 'twitter-bootstrap-rails' - redundant with sass-rails
 gem 'therubyracer'
 gem 'less-rails'
 gem 'uglifier', '>= 1.3.0'  # Use Uglifier as compressor for JavaScript assets

@@ -1,0 +1,20 @@
+<a class="add_fields" data-association="region" data-associations="regions" data-association-insertion-template="<div class='nested-fields'>
+                <div class='form-inline'>
+                  <div class=&quot;form-group string optional continent_regions_name&quot;><label class=&quot;control-label string optional&quot; for=&quot;continent_regions_attributes_new_regions_name&quot;>Name</label><input class=&quot;form-control string optional&quot; type=&quot;text&quot; name=&quot;continent[regions_attributes][new_regions][name]&quot; id=&quot;continent_regions_attributes_new_regions_name&quot; /></div>
+                  <div class=&quot;form-group integer optional continent_regions_id&quot;><label class=&quot;control-label integer optional&quot; for=&quot;continent_regions_attributes_new_regions_id&quot;>Id</label><input class=&quot;form-control numeric integer optional&quot; type=&quot;number&quot; step=&quot;1&quot; name=&quot;continent[regions_attributes][new_regions][id]&quot; id=&quot;continent_regions_attributes_new_regions_id&quot; /></div>
+                  <input type=&quot;hidden&quot; name=&quot;continent[regions_attributes][new_regions][_destroy]&quot; id=&quot;continent_regions_attributes_new_regions__destroy&quot; value=&quot;false&quot; /><a class=&quot;btn btn-danger close remove_fields dynamic&quot; href=&quot;#&quot;>Remove Region</a>
+                </div>
+                <div class='countries'>
+                
+                  <div class='links'>
+                    <a class=&quot;btn btn-default add_fields&quot; data-association=&quot;country&quot; data-associations=&quot;countries&quot; data-association-insertion-template=&quot;&amp;lt;div class=&amp;#39;nested-fields&amp;#39;&amp;gt;
+                      &amp;lt;div class=&amp;#39;form-inline&amp;#39;&amp;gt;
+                        &amp;lt;div class=&amp;quot;form-group string optional continent_regions_new_regions_countries_name&amp;quot;&amp;gt;&amp;lt;label class=&amp;quot;control-label string optional&amp;quot; for=&amp;quot;continent_regions_attributes_new_regions_countries_attributes_new_countries_name&amp;quot;&amp;gt;Name&amp;lt;/label&amp;gt;&amp;lt;input class=&amp;quot;form-control string optional&amp;quot; type=&amp;quot;text&amp;quot; name=&amp;quot;continent[regions_attributes][new_regions][countries_attributes][new_countries][name]&amp;quot; id=&amp;quot;continent_regions_attributes_new_regions_countries_attributes_new_countries_name&amp;quot; /&amp;gt;&amp;lt;/div&amp;gt;
+                        &amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;continent[regions_attributes][new_regions][countries_attributes][new_countries][_destroy]&amp;quot; id=&amp;quot;continent_regions_attributes_new_regions_countries_attributes_new_countries__destroy&amp;quot; value=&amp;quot;false&amp;quot; /&amp;gt;&amp;lt;a class=&amp;quot;btn btn-danger close remove_fields dynamic&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;Remove Country&amp;lt;/a&amp;gt;
+                      &amp;lt;/div&amp;gt;
+                    &amp;lt;/div&amp;gt;
+                    &quot; href=&quot;#&quot;>Add Country</a>
+                  </div>
+                </div>
+              </div>
+              " href="#">Add Region</a>

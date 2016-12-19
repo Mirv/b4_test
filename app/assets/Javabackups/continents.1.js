@@ -14,18 +14,19 @@ $(document).ready(function() {
     e.stopPropagation();
     country_to_be_added.fadeIn('slow');
   });
-
-  var jqueryObject = $('btn');
-  var rawDOMElement = jqueryObject.get(0);
   
-  var eventObject = $._data(rawDOMElement, 'events');
-  if(eventObject != undefined && eventObject.click != undefined)
-  {
-    console.log('Click event already exists' + jqueryObject)
-  }
-  else
-  {
-    console.log('Not duplicate')
-  }
+    $('#tasks').bind('cocoon:before-insert', function(e,task_to_be_added) {
+    console.log(task_to_be_added);
+    task_to_be_added.fadeIn('slow');
+  });
+  
+  $.fn.isBound = function(type, fn) {
+      var data = this.data('events')[type];
+  
+      if (data === undefined || data.length === 0) {
+          return false;
+      }
+  
+      return (-1 !== $.inArray(fn, data));
+  };
 });
-  
