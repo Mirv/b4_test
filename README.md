@@ -1,15 +1,19 @@
+## Update
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+### Issue #1 - Clicking once will add two new fields to the form
 
-## Support & Documentation
+##### Master branch is fixed
+##### Pre-gem pulling (ignore name) holds the bugged behavior with turbolinks
 
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+- Issue was turbolinks fighting with the jquery.  See /app/view/layouts ... application.html & the duplicate file with it
+
+
+### Issue #2 - event call backs not always firing predictably
+
+- Pending on a new branch
+- 
+
+### Previous readme
 
 ## List
 
