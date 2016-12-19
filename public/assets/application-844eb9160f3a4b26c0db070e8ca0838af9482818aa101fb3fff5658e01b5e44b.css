@@ -11,15 +11,3 @@
  * file per style scope.
  *
  */
-
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
-
-/*
-@import "bootswatch/startbootstrap-sb-admin-2/variables";
-@import "bootstrap";
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap";
-@import "bootswatch/startbootstrap-sb-admin-2/bootswatch";
-@import "base";
-*/

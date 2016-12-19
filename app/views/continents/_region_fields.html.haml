@@ -1,7 +1,12 @@
 .nested-fields
-  %p
+  .form-inline
+    = f.input :name
     = f.input :id
-
-
+    = link_to_remove_association "Remove Region", f, :class => "btn btn-danger close"
+  .countries
+    = f.simple_fields_for :countries do |c|
+      = (render 'country_fields', :f => c).html_safe
+    .links
+      = link_to_add_association('Add Country', f, :countries, :class => "btn btn-default").html_safe   
 
   

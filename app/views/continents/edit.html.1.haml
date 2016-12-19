@@ -1,0 +1,24 @@
+.nested-fields
+  %h1 Editing Continent:  #{@continent.name.capitalize}
+  
+  .error-form
+    = render 'form'
+  
+  .nested-fields
+    = simple_form_for @continent do |f|
+      .continentshow
+        = f.input :name
+        = f.input  :id
+      %h3 Regions 
+      .adding-regions
+        = f.simple_fields_for :regions do |r|
+          = render 'region_fields', :f => r
+        .adds-r
+          = link_to_add_association 'Add Region', f, :regions, :class => "btn btn-default"
+      = f.button :submit, :class => "btn btn-primary"
+  
+  %br
+  
+  = link_to 'Show', @continent, :class => "btn btn-default"
+  = link_to 'Back', continents_path, :class => "btn btn-default"
+   

@@ -1,0 +1,7 @@
+.nested-fields
+  .countries
+    = f.input :name
+    .remove-region
+      = link_to_remove_association "Remove Country", f, :class => "btn btn-danger close"
+
+  

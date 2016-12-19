@@ -1,6 +1,12 @@
 Working on edit field of continents:
 
 
+Pulled jquery-ui something....//= require jquery_ujs....might need to put it in and take out the jquery....as there's a double somewhere
+
+
+==================
+
+    = simple_form_for @continent, html: { class: "form-inline"} do |f|
 
 
 

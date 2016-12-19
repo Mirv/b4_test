@@ -2,14 +2,15 @@ source 'https://rubygems.org'
 
 gem 'rails', '5'  # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
-gem 'sass-rails', '~> 5.0'  # Use SCSS for stylesheets
-gem 'bootstrap-sass', '~> 3.3.6'  # bootstrap
-gem 'bootswatch-rails', '~> 3.2.0' # more themes
-gem 'twitter-bootstrap-rails'
+gem 'coffee-script'
+#gem 'sass-rails', '~> 5.0'  # Use SCSS for stylesheets
+#gem 'bootstrap-sass', '~> 3.3.6'  # bootstrap
+# gem 'bootswatch-rails', '~> 3.2.0' # more themes - redundant with cdn
+# gem 'twitter-bootstrap-rails' - redundant with sass-rails
 gem 'therubyracer'
 gem 'less-rails'
 gem 'uglifier', '>= 1.3.0'  # Use Uglifier as compressor for JavaScript assets
-gem 'coffee-rails', '~> 4.1.0'  # Use CoffeeScript for .coffee assets and views
+
 gem 'jquery-rails' # Use jquery as the JavaScript library
 gem 'turbolinks'  # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'jbuilder', '~> 2.0' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
