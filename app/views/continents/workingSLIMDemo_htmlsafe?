@@ -1,7 +1,0 @@
-<a class="btn btn-default add_fields" data-association="country" data-associations="countries" data-association-insertion-template="<div class='nested-fields'>
-                      <div class='form-inline'>
-                        <div class=&quot;form-group string optional continent_regions_1481933070675_countries_name&quot;><label class=&quot;control-label string optional&quot; for=&quot;continent_regions_attributes_1481933070675_countries_attributes_new_countries_name&quot;>Name</label><input class=&quot;form-control string optional&quot; type=&quot;text&quot; name=&quot;continent[regions_attributes][1481933070675][countries_attributes][new_countries][name]&quot; id=&quot;continent_regions_attributes_1481933070675_countries_attributes_new_countries_name&quot; /></div>
-                        <input type=&quot;hidden&quot; name=&quot;continent[regions_attributes][1481933070675][countries_attributes][new_countries][_destroy]&quot; id=&quot;continent_regions_attributes_1481933070675_countries_attributes_new_countries__destroy&quot; value=&quot;false&quot; /><a class=&quot;btn btn-danger close remove_fields dynamic&quot; href=&quot;#&quot;>Remove Country</a>
-                      </div>
-                    </div>
-                    " href="#">Add Country</a>
