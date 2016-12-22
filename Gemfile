@@ -4,6 +4,7 @@ gem 'rails', '5'  # Bundle edge Rails instead: gem 'rails', github: 'rails/rails
 
 gem 'coffee-script'
 gem 'therubyracer'
+gem 'sass-rails', '~> 5.0'
 gem 'less-rails'
 gem 'uglifier', '>= 1.3.0'  # Use Uglifier as compressor for JavaScript assets
 
