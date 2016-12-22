@@ -18,14 +18,14 @@ $(document).ready(function() {
   var jqueryObject = $('btn');
   var rawDOMElement = jqueryObject.get(0);
   
-  var eventObject = $._data(rawDOMElement, 'events');
-  if(eventObject != undefined && eventObject.click != undefined)
-  {
-    console.log('Click event already exists' + jqueryObject)
-  }
-  else
-  {
-    console.log('Not duplicate')
-  }
+  // var eventObject = $._data(rawDOMElement, 'events');
+  // if(eventObject != undefined && eventObject.click != undefined)
+  // {
+  //   console.log('Click event already exists' + jqueryObject)
+  // }
+  // else
+  // {
+  //   console.log('Not duplicate')
+  // }
 });
   
