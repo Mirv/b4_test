@@ -1,11 +1,12 @@
-= simple_form_for @continent do |f|
-  .form-inline
-    .regions
-      = f.simple_fields_for :regions do |region|
-        = render 'region_fields', :f => region
-    .links
+= simple_form_for @continent, html: {class: 'form-horizontal'} do |f|
+  = f.input :name
+  .regions
+    = f.simple_fields_for :regions do |region|
+      = render 'region_fields', :f => region
+  .links.row
+    .col-sm-9.col-sm-offset-3
       = link_to_add_association 'Add Region', f, :regions, :class => "btn btn-default"
-    = f.button :submit, :class => "btn btn-primary"
+  = f.button :submit, :class => "btn btn-primary"
   
   
   
