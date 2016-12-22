@@ -1,10 +1,10 @@
 = simple_form_for @continent do |f|
   .form-inline
     .regions
-      = f.simple_fields_for :regions do |r|
-        = (render 'region_fields', :f => r).html_safe
+      = f.simple_fields_for :regions do |region|
+        = render 'region_fields', :f => region
     .links
-      = link_to_add_association('Add Region', f, :regions, :class => "btn btn-default").html_safe
+      = link_to_add_association 'Add Region', f, :regions, :class => "btn btn-default"
     = f.button :submit, :class => "btn btn-primary"
   
   
