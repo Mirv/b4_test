@@ -1,31 +1,31 @@
-$(document).ready(function() {
+$(document).on("ready", function() {
     console.log("-- Page Load --");
   
-  $('.regions').bind('cocoon:before-insert', function(e,region_to_be_added) {
+  $(document).on('cocoon:before-insert', 'form', function(e,region_to_be_added) {
     console.log(region_to_be_added);
-    console.log("Regions");
+    console.log("Regions before-insert");
+    e.stopPropagation();
+    region_to_be_added.fadeIn('slow');
+  });
+  $(document).on('cocoon:after-insert', 'form', function(e,region_to_be_added) {
+    console.log(region_to_be_added);
+    console.log("Regions after-insert");
     e.stopPropagation();
     region_to_be_added.fadeIn('slow');
   });
 
-  $('.countries').bind('cocoon:after-insert', function(e,country_to_be_added) {
+  $(document).on('cocoon:before-insert', '.regions', function(e,country_to_be_added) {
     console.log(country_to_be_added);
-    console.log("Countries");
+    console.log("Countries before-insert");
+    e.stopPropagation();
+    country_to_be_added.fadeIn('slow');
+  });
+  $(document).on('cocoon:after-insert', '.regions', function(e,country_to_be_added) {
+    console.log(country_to_be_added);
+    console.log("Countries after-insert");
     e.stopPropagation();
     country_to_be_added.fadeIn('slow');
   });
 
-  var jqueryObject = $('btn');
-  var rawDOMElement = jqueryObject.get(0);
-  
-  var eventObject = $._data(rawDOMElement, 'events');
-  if(eventObject != undefined && eventObject.click != undefined)
-  {
-    console.log('Click event already exists' + jqueryObject)
-  }
-  else
-  {
-    console.log('Not duplicate')
-  }
 });
   
