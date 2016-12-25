@@ -1,3 +1,10 @@
+# Test Section #4 -- confirming changes & understanding of them
+
+- Issue #1 - resolved
+- Issue #2 - A - resolved - went over all the css & found no implicit hooks
+  - Question #2 - B - need to read more jquery/javascript
+  - Question #2 - C - Why slim demo use .bind & not .on like my projtect require
+
 ## Update
 
 ### Issue #1 - resolved on master branch - Clicking once will add two new fields to the form
@@ -27,7 +34,9 @@
 - why?
 - 
 
-### Tracking
+# Tracking
+
+## Done
 
   - adjusted top/bottom margin by a few points.
   - added list-group & list-group-items to the _form.html
@@ -41,6 +50,9 @@
 - layout/Application.html
   - #push in layouts/application.html ... removal has no effect to add/remove
 
+## To do
+
+- Tons of stuff
 
 
 # Previous readme
