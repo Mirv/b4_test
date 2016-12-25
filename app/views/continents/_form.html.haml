@@ -1,12 +1,13 @@
-= simple_form_for @continent, html: {class: 'form-horizontal'} do |f|
+= simple_form_for @continent, html: {class: 'form-horizontal.list-group'} do |f|
   = f.input :name
-  .regions
+  .regions.list-group-item
     = f.simple_fields_for :regions do |region|
       = render 'region_fields', :f => region
-  .links.row
-    .col-sm-9.col-sm-offset-3
-      = link_to_add_association 'Add Region', f, :regions, :class => "btn btn-default"
-  = f.button :submit, :class => "btn btn-primary"
+    .links.row
+      .col-sm-9.col-sm-offset-0
+        = link_to_add_association 'Add Region', f, :regions, :class => "btn btn-default"
+  .list-group-item
+    = f.button :submit, :class => "btn btn-primary"
   
   
   
