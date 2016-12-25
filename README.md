@@ -25,6 +25,21 @@
 #### Issue #2 - C - Slim Demo's project.js doesn't use .on, but rather bind ...
 
 - why?
+- 
+
+### Tracking
+
+  - adjusted top/bottom margin by a few points.
+  - added list-group & list-group-items to the _form.html
+  - Removed another html_safe
+  - https://github.com/Mirv/b4_test/pull/1/commits
+- views/continent/Forms.html
+  - .row appears to have no effect on .links in the form
+  - kept the offset prop for the add region, but made it 0 to pad slightly
+  - moved add regions into the div for list-group
+  - moved, added update continent link as list-group-item
+- layout/Application.html
+  - #push in layouts/application.html ... removal has no effect to add/remove
 
 
 
