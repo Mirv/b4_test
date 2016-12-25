@@ -1,19 +1,23 @@
 ## Update
 
-### Issue #1 - Clicking once will add two new fields to the form
+### Issue #1 - resolved on master branch - Clicking once will add two new fields to the form
 
-##### Master branch is fixed
-##### Pre-gem pulling (ignore name) holds the bugged behavior with turbolinks
+- Pre-gem pulling (ignore name) holds the bugged behavior with turbolinks
 
-- Issue was turbolinks fighting with the jquery.  See /app/view/layouts ... application.html & the duplicate file with it
+- Issue was turbolinks fighting with the jquery.  See /app/view/layouts 
+- ... application.html & the duplicate file with it
 
+### Issue #2 - fixed, but questions - event call backs not always firing predictably
 
-### Issue #2 - event call backs not always firing predictably
+- cocoon master corrected several typo's
+- verified css
+- verified one div indent ('workspace') was unnecessary, possibly causing issues
+- Couldn't find on splash page for cocoon (https://github.com/nathanvda/cocoon)
+- ...where they listed the <<'form'>> in documentation...probably an issue I'll 
+- ...see later
+- ...  $(document).on('<hook>', <<'form'>>, <function(e, <something>)> {
 
-- Pending on a new branch
-- 
-
-### Previous readme
+# Previous readme
 
 ## List
 
