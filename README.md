@@ -12,10 +12,21 @@
 - cocoon master corrected several typo's
 - verified css
 - verified one div indent ('workspace') was unnecessary, possibly causing issues
+ 
+#### Issue #2 - B - No documentation of second argument 
+
+- Probably a basic javascript/jquery thing I haven't learned yet
 - Couldn't find on splash page for cocoon (https://github.com/nathanvda/cocoon)
 - ...where they listed the <<'form'>> in documentation...probably an issue I'll 
-- ...see later
+- ...see later...
 - ...  $(document).on('<hook>', <<'form'>>, <function(e, <something>)> {
+- ...also no shown in the SLIM demo project
+
+#### Issue #2 - C - Slim Demo's project.js doesn't use .on, but rather bind ...
+
+- why?
+
+
 
 # Previous readme
 
