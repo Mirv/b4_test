@@ -1,0 +1,10 @@
+%h1 Editing Continent:  #{@continent.name.capitalize}
+
+.error-form
+  = render 'continents/form'
+
+%br
+
+= link_to 'Show', @continent, :class => "btn btn-default"
+= link_to 'Back', continents_path, :class => "btn btn-default"
+   

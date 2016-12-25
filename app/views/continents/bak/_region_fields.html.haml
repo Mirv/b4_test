@@ -6,6 +6,6 @@
     = f.simple_fields_for :countries do |c|
       = render 'country_fields', :f => c
     .links
-      = link_to_add_association('Add Country', f, :countries, :class => "btn btn-default") 
+      = link_to_add_association('Add Country', f, :countries, :class => "btn btn-default").html_safe   
 
   

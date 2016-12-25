@@ -1,0 +1,9 @@
+Going to test the .nested-fields etc ... possibly just css, or jquery hooks?
+    .well -- is only css
+    .nested-country
+
+Removed another html_safe
+https://github.com/Mirv/b4_test/pull/1/commits
+
+Test callbacks to see if we absolutely need the $document or we can . inherit or is this clarity thing?
+Add in more callbacks
