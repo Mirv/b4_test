@@ -1,17 +1,17 @@
 $(document).on("ready", function() {
     console.log("-- Page Load --");
   
-  $(document).on('cocoon:before-insert', 'form', function(e,region_to_be_added) {
-    console.log(region_to_be_added);
-    console.log("Regions - before-insert");
+  $(document).on('cocoon:before-insert', 'form', function(e,field_to_be_added) {
+    console.log(field_to_be_added);
+    console.log("field add - before-insert");
     e.stopPropagation();
-    region_to_be_added.fadeIn('slow');
+    field_to_be_added.fadeIn('slow');
   });
-  $(document).on('cocoon:after-insert', 'form', function(e,region_to_be_added) {
-    console.log(region_to_be_added);
-    console.log("Regions - after-insert");
+  $(document).on('cocoon:after-insert', 'form', function(e,field_to_be_added) {
+    console.log(field_to_be_added);
+    console.log("field add - after-insert");
     e.stopPropagation();
-    region_to_be_added.fadeIn('slow');
+    field_to_be_added.fadeIn('slow');
   });
 
 

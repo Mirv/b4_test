@@ -5,6 +5,8 @@
   - Question #2 - B - need to read more jquery/javascript
   - - Is the childselector in the ".on" required for cocoon to grab on too?
   - Question #2 - C - Why slim demo use .bind & not .on like my projtect requires?
+  - Question #2 - D - removal of the .on('region') in continent.js had no effect
+  - ...meaning the "form" version above was doing all the work?  Tested true!?
 
 # Tracking
 
@@ -26,11 +28,15 @@
   - ... $(document).on('cocoon:after-insert', 'regions', function(e,country_to_be_added) {
   - ... apparently not necessary for the level of code I'm writing, prehaps mis-reading intent
   - ... what if intent is to bind to the form object, rather than to div tag on partial named form
+  - removed the .on('region') ... as test, found weirdness with 'form' one doing all work
+  - changed callback field names for 'form' in continent.js to reflect it's field handler
+  - added callbacks for fading removed fields
 
 ## To do
 
 - Tons of stuff
  - add in callback for removing the link in project.js
+ - official tests - no blanks
 
 ## Old Update 12/14/2016
 
