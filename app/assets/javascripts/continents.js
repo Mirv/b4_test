@@ -29,13 +29,4 @@ $(document).on("ready", function() {
     e.stopPropagation();
   });
 
-
 });
-  
-// - trash
-
-    // $('#owner').bind("cocoon:after-remove", 
-    //       function() { 
-    //         $("#owner_from_list").show(); 
-    //         $("#owner a.add_fields").show(); 
-    //         }); 
