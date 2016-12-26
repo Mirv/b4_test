@@ -1,11 +1,38 @@
-# Test Section #4 -- confirming changes & understanding of them
+# Test Group #4 -- confirming changes & understanding of them
 
 - Issue #1 - resolved
 - Issue #2 - A - resolved - went over all the css & found no implicit hooks
   - Question #2 - B - need to read more jquery/javascript
-  - Question #2 - C - Why slim demo use .bind & not .on like my projtect require
+  - - Is the childselector in the ".on" required for cocoon to grab on too?
+  - Question #2 - C - Why slim demo use .bind & not .on like my projtect requires?
 
-## Update
+# Tracking
+
+## Done
+
+  - adjusted top/bottom margin by a few points.
+  - added list-group & list-group-items to the _form.html
+  - Removed another html_safe
+  - https://github.com/Mirv/b4_test/pull/1/commits
+- views/continent/Forms.html
+  - .row appears to have no effect on .links in the form
+  - kept the offset prop for the add region, but made it 0 to pad slightly
+  - moved add regions into the div for list-group
+  - moved, added update continent link as list-group-item
+- layout/Application.html
+  - #push in layouts/application.html ... removal has no effect to add/remove
+- continent.js
+  - Changed the '.regions' to 'regions' as 'form' didn't have it either
+  - ... $(document).on('cocoon:after-insert', 'regions', function(e,country_to_be_added) {
+  - ... apparently not necessary for the level of code I'm writing, prehaps mis-reading intent
+  - ... what if intent is to bind to the form object, rather than to div tag on partial named form
+
+## To do
+
+- Tons of stuff
+ - add in callback for removing the link in project.js
+
+## Old Update 12/14/2016
 
 ### Issue #1 - resolved on master branch - Clicking once will add two new fields to the form
 
@@ -32,27 +59,8 @@
 #### Issue #2 - C - Slim Demo's project.js doesn't use .on, but rather bind ...
 
 - why?
-- 
 
-# Tracking
 
-## Done
-
-  - adjusted top/bottom margin by a few points.
-  - added list-group & list-group-items to the _form.html
-  - Removed another html_safe
-  - https://github.com/Mirv/b4_test/pull/1/commits
-- views/continent/Forms.html
-  - .row appears to have no effect on .links in the form
-  - kept the offset prop for the add region, but made it 0 to pad slightly
-  - moved add regions into the div for list-group
-  - moved, added update continent link as list-group-item
-- layout/Application.html
-  - #push in layouts/application.html ... removal has no effect to add/remove
-
-## To do
-
-- Tons of stuff
 
 
 # Previous readme
@@ -81,16 +89,11 @@
 - ...tried "= (render stuff).html_safe" 
 - .... "link_to_add_association(stuff).html_safe"
 - .... found jquery called twice somewhere in the application!
-- 
 - 2nd possible lead... from _form on slim demo "" == render :partial => 'shared/flashes' ""
-- 
 - 3rd possible lead... my test projects all have index specified via scaffold in the schema.rb, slim-cocoon demo doesn't
-- 
 - 4th possible lead... bootstrap isn't actually in slim demo!!
-- -
 - 5th diff:  he doesn't use model belongs_to or at all expect in model/project.rb
 -   ... except task & sub_task which point at each other as expected
--   
 - 6th diff:  what is the #push in slim demo?
 
 ## Other information

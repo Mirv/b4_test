@@ -45,4 +45,10 @@ class ContinentsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to continents_url
   end
+  
+  test "should not save blank continent name" do
+    continent = Continent.new
+    assert_not continent.save, "Should not save if continent name is blank"
+  end
+  
 end
